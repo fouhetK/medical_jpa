@@ -20,10 +20,10 @@ public class Patient {
 	private Date datenaissance;
 	private String adresse;
 
-	@OneToOne(cascade = { CascadeType.PERSIST, CascadeType.REMOVE })
+	@OneToOne(cascade = { CascadeType.PERSIST })
 	private Ville ville;
 
-	@OneToOne(cascade = { CascadeType.PERSIST, CascadeType.REMOVE })
+	@OneToOne(cascade = { CascadeType.PERSIST })
 	private Pays pays;
 
 	/**

@@ -1,4 +1,4 @@
-package medical.m2i.servlet;
+package medical.m2i.controller.patient;
 
 import java.io.IOException;
 import java.sql.Date;
@@ -59,10 +59,10 @@ public class AjoutPatient extends HttpServlet {
 		Pays pays = paysDAO.get(request.getParameter("pays"));
 		Ville ville = villeDAO.get(request.getParameter("ville"));
 
-		Patient personne = new Patient(prenom, nom, Date.valueOf(date), adresse, ville, pays);
-
-		personneDAO.save(personne);
-
+		if (pays != null && ville != null) {
+			Patient personne = new Patient(prenom, nom, Date.valueOf(date), adresse, ville, pays);
+			personneDAO.save(personne);
+		}
 		getServletContext().getRequestDispatcher("/inscription.jsp").forward(request, response);
 	}
 

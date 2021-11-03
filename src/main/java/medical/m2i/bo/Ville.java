@@ -16,8 +16,22 @@ public class Ville {
 	private String nom;
 	private String codePostal;
 
-	@OneToOne(cascade = { CascadeType.PERSIST, CascadeType.REMOVE })
+	@OneToOne(cascade = { CascadeType.PERSIST })
 	private Pays pays;
+
+	/**
+	 * @return the pays
+	 */
+	public Pays getPays() {
+		return pays;
+	}
+
+	/**
+	 * @param pays the pays to set
+	 */
+	public void setPays(Pays pays) {
+		this.pays = pays;
+	}
 
 	public Ville() {
 		// TODO Auto-generated constructor stub

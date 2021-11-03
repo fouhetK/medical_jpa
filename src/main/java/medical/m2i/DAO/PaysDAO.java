@@ -25,7 +25,7 @@ public class PaysDAO extends AbstractDAO<Pays> {
 
 	@Override
 	public Collection<Pays> findAll() {
-		Query query = em.createQuery("from pays");
+		Query query = em.createQuery("from Pays");
 
 		return query.getResultList();
 	}

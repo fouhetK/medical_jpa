@@ -1,4 +1,4 @@
-package medical.m2i.servlet;
+package medical.m2i.controller.ville;
 
 import java.io.IOException;
 import java.util.Collection;
@@ -16,7 +16,7 @@ import medical.m2i.bo.Ville;
 /**
  * Servlet implementation class VilleServlet
  */
-@WebServlet("/villes")
+@WebServlet(name = "villes", urlPatterns = { "/villes" })
 public class VilleServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

@@ -5,8 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Liste des patients</title>
-<link rel="stylesheet" href="style.css" />
+<title>Page d'inscription</title>
 <script>function load(page) {
 	  if (page.value != "") {
 		  var myHeaders = new Headers();
@@ -35,35 +34,35 @@
 <body>
 	<%@ include file="fragments/header.jsp"%>
 
-	<main>
+	<main class="container">
 		<h1>Formulaire d'inscription</h1>
 		<hr>
 		<div></div>
 		<form name="monForm"
 			action="http://localhost:8080/medical5_jpa/ajoutpatient"
 			method="post">
-			<div class="form-line">
-				<label>Nom *</label> <input type="text" name="nom"
-					placeholder="Votre nom" required>
+			<div class="form-line mb-4">
+				<label class="form-label">Nom *</label> <input class="form-control"
+					type="text" name="nom" placeholder="Votre nom" required>
 			</div>
-			<div class="form-line">
-				<label>Prénom *</label> <input type="text" name="prenom"
+			<div class="form-line mb-4">
+				<label class="form-label">Prénom *</label> <input class="form-control" type="text" name="prenom"
 					placeholder="Votre prénom" required>
 			</div>
 
-			<div class="form-line">
-				<label>Date de naissance *</label> <input type="date"
-					name="datenaissance" placeholder="dd/mm/yyyy" required>
+			<div class="form-line mb-4">
+				<label class="form-label">Date de naissance *</label> <input
+					class="form-control" type="date" name="datenaissance" placeholder="dd/mm/yyyy" required>
 			</div>
 
-			<div class="form-line">
-				<label>Adresse *</label> <input type="text" name="adresse"
-					placeholder="Votre adresse" required>
+			<div class="form-line mb-4">
+				<label class="form-label">Adresse *</label> <input class="form-control" type="text"
+					name="adresse" placeholder="Votre adresse" required>
 			</div>
 
-			<div class="form-line">
-				<label>Pays *</label> <select name="pays" required id="pays"
-					onchange="load(this)">
+			<div class="form-line mb-4">
+				<label class="form-label">Pays *</label> <select name="pays"
+					class="form-select" required id="pays" onchange="load(this)">
 					<option value="">--choisisser un pays--</option>
 					<option value="Fra">France</option>
 					<option value="Ita">Italie</option>
@@ -71,17 +70,17 @@
 				</select>
 			</div>
 
-			<div class="form-line">
-				<label>Ville *</label>
+			<div class="form-line mb-4">
+				<label class="form-label">Ville *</label>
 				<div id="cities-content" style="width: 59%; float: right">
-					<select name="ville" required id="ville" disabled>
+					<select class="form-select" name="ville" required id="ville" disabled>
 						<option value="">--choisisser un pays--</option>
 					</select>
 				</div>
 			</div>
 
-			<div class="form-line">
-				<button type="submit" id="buttoncreatepatient">Envoyer</button>
+			<div class="form-line mb-4">
+				<button type="submit" id="buttoncreatepatient" class="btn btn-primary">Envoyer</button>
 			</div>
 
 		</form>
