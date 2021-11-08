@@ -1,7 +1,7 @@
 import medical.m2i.DAO.PaysDAO;
 import medical.m2i.DAO.VilleDAO;
-import medical.m2i.bo.Pays;
-import medical.m2i.bo.Ville;
+import medical.m2i.model.Pays;
+import medical.m2i.model.Ville;
 
 public class CreateVille {
 	private static VilleDAO villeDAO = new VilleDAO();

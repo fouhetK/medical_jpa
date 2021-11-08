@@ -4,9 +4,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
 	<persistence-unit name="medical5_jpa">
-		<class>medical.m2i.bo.Patient</class>
-		<class>medical.m2i.bo.Pays</class>
-		<class>medical.m2i.bo.Ville</class>
+		<class>medical.m2i.model.Medecin</class>
+		<class>medical.m2i.model.Patient</class>
+		<class>medical.m2i.model.Pays</class>
+		<class>medical.m2i.model.User</class>
+		<class>medical.m2i.model.Ville</class>
 		<properties>
 			<property name="javax.persistence.jdbc.url"
 				value="jdbc:mysql://localhost:3306/medical_jpa" />

@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import medical.m2i.DAO.PatientDAO;
-import medical.m2i.bo.Patient;
+import medical.m2i.model.Patient;
 
 /**
  * Servlet implementation class Test

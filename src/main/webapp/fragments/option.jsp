@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.List"%>
 <%@ page import="java.util.ArrayList"%>
-<%@ page import="medical.m2i.bo.Ville"%>
+<%@ page import="medical.m2i.model.Ville"%>
 <%
 ArrayList<Ville> listeville = new ArrayList<Ville>();
 %>

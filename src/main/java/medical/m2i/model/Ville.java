@@ -1,4 +1,4 @@
-package medical.m2i.bo;
+package medical.m2i.model;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;

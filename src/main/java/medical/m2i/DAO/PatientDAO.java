@@ -4,7 +4,7 @@ import java.util.Collection;
 
 import javax.persistence.Query;
 
-import medical.m2i.bo.Patient;
+import medical.m2i.model.Patient;
 
 public class PatientDAO extends AbstractDAO<Patient> {
 

@@ -9,16 +9,18 @@ import javax.persistence.Persistence;
 
 public abstract class AbstractDAO<T extends Object> {
 
-	protected static EntityManagerFactory emf;
-	protected static EntityManager em;
+	protected static EntityManagerFactory emf = null;
+	protected static EntityManager em = null;
 
 	public AbstractDAO() {
 		super();
-		// Création de l’EntityManagerFactory
-		emf = Persistence.createEntityManagerFactory("medical5_jpa");
+		if (emf == null) {
+			// Création de l’EntityManagerFactory
+			emf = Persistence.createEntityManagerFactory("medical5_jpa");
 
-		// Création de l’EntityManager
-		em = emf.createEntityManager();
+			// Création de l’EntityManager
+			em = emf.createEntityManager();
+		}
 	}
 
 	/**

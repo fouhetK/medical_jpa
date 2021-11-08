@@ -9,8 +9,8 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
-import medical.m2i.bo.Pays;
-import medical.m2i.bo.Ville;
+import medical.m2i.model.Pays;
+import medical.m2i.model.Ville;
 
 public class VilleDAO extends AbstractDAO<Ville> {
 

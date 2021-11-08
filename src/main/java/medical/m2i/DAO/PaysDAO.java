@@ -4,7 +4,7 @@ import java.util.Collection;
 
 import javax.persistence.Query;
 
-import medical.m2i.bo.Pays;
+import medical.m2i.model.Pays;
 
 public class PaysDAO extends AbstractDAO<Pays> {
 

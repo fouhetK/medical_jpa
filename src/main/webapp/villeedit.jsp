@@ -2,8 +2,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.ArrayList"%>
-<%@ page import="medical.m2i.bo.Pays"%>
-<%@ page import="medical.m2i.bo.Ville"%>
+<%@ page import="medical.m2i.model.Pays"%>
+<%@ page import="medical.m2i.model.Ville"%>
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,4 +1,4 @@
-package medical.m2i.bo;
+package medical.m2i.model;
 
 import java.sql.Date;
 

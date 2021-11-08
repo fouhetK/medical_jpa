@@ -1,7 +1,7 @@
 <%@page import="javax.swing.text.Document"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ page import="medical.m2i.bo.Patient"%>
+<%@ page import="medical.m2i.model.Patient"%>
 <!DOCTYPE html>
 <html>
 <head>

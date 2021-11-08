@@ -12,9 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 import medical.m2i.DAO.PatientDAO;
 import medical.m2i.DAO.PaysDAO;
 import medical.m2i.DAO.VilleDAO;
-import medical.m2i.bo.Patient;
-import medical.m2i.bo.Pays;
-import medical.m2i.bo.Ville;
+import medical.m2i.model.Patient;
+import medical.m2i.model.Pays;
+import medical.m2i.model.Ville;
 
 /**
  * Servlet implementation class EditPatientServlet
@@ -46,7 +46,7 @@ public class EditPatientServlet extends HttpServlet {
 			request.setAttribute("patient", patient);
 			getServletContext().getRequestDispatcher("/patientedit.jsp").forward(request, response);
 		} catch (Exception e) {
-			System.out.println();
+			System.out.println(e);
 		}
 	}
 
